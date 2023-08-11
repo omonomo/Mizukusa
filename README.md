@@ -22,7 +22,7 @@
 ローマ字は日本式を想定していますが、ヘボン式の方が入力しやすい文字はヘボン式を優先しました。「ん」は基本[n]で、状況に応じて[n][n]を使用するとしました。  
 実際の使用環境に近づけるため、句読点や括弧の後にスペースキーでかな漢字変換 (変換効率100%、つまり一発で確定) を行うことを想定しています。
 
-<img alt="打鍵数削減率" src="./images/hikaku_daken.png" width="882">
+<img alt="打鍵数削減率" src="./images/hikaku_daken.png" width="884">
 
 <img alt="各指連続打鍵率" src="./images/hikaku_renzoku.png" width="650">
 
@@ -63,4 +63,3 @@
 
 ## リンク
 - [全角英数記号や半角カタカナが判別しやすい等幅フォント「Cyroit」](https://omonomo.github.io/Cyroit/): 合成フォントを作ってみました。
-
