@@ -65,7 +65,7 @@
 
 ### ファイル一覧
 
-|                   | Mozc | かわせみ | MS-IME [※使用注意](#MS-IME-用レジストリファイルについて) |
+|                   | Mozc | かわせみ | MS-IME [※使用注意](#ms-ime-用レジストリファイルについて) |
 |-------------------|------|----------|--------|
 | **Colemak配列**   | [テーブル設定ファイル](./data/Mozc_Mizukusa_Colemak.txt) | [ルールファイル](./data/Kawasemi_Mizukusa_Colemak.nrset) | [レジストリファイル](./data/MS-IME15_Mizukusa_Colemak.reg) |
 | **QwertyUS配列**  | [テーブル設定ファイル](./data/Mozc_Mizukusa_QwertyUS.txt) | [ルールファイル](./data/Kawasemi_Mizukusa_QwertyUS.nrset) | [レジストリファイル](./data/MS-IME15_Mizukusa_QwertyUS.reg) |
