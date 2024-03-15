@@ -13,7 +13,7 @@
 
 中指と薬指のホームポジションのキーを前置シフトとして使用します。
 
-<img alt="配列図" src="./images/hairetu.png" width="872">
+<img alt="配列図" src="./images/hairetu.png" width="870">
 
 ## データ的なもの
 
