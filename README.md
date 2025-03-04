@@ -92,9 +92,4 @@
 ## リンク
 
 - [全角英数や半角カナが判別しやすい、文字間隔調整機能付き等幅フォント「Cyroit」](https://omonomo.github.io/Cyroit/): 合成フォントを作ってみました。
-- [全角英数や半角カナが判別しやすい、文字間隔調整機能付き等幅フォント「Meroit」](https://omonomo.github.io/Meroit/): 合成フォントをさらに合成してみました。
-- [全角英数や半角カナが判別しやすい、文字間隔調整機能付き等幅フォント「Jeroit」](https://omonomo.github.io/Jeroit/): 調子に乗って別のフォントと合成してみました。
-- [全角英数や半角カナが判別しやすい、文字間隔調整機能付き等幅フォント「Ubroit」](https://omonomo.github.io/Ubroit/): 少し趣の異なるフォントとも合成してみました。
-- [全角英数や半角カナが判別しやすい、文字間隔調整機能付き等幅フォント「Soroit」](https://omonomo.github.io/Soroit/): 既に本家製作の日本語対応フォントがありますが合成してみました。
-- [全角英数や半角カナが判別しやすい、文字間隔調整機能付き等幅フォント「Roroit」](https://omonomo.github.io/Roroit/): さらに別のフォントと合成してみました。
 - [DefaultKeyBinding.dict サンプル](https://omonomo.github.io/DefaultKeyBinding/): タイトル通りです。
