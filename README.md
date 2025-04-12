@@ -6,7 +6,7 @@
 ## 特徴
 
 - 小指が担当するキーを極力減らしています。使用するキーの数が少ないため、入力モード切り換えや文字種変換、キーボードショートカットなしで多くの記号が入力できます。
-- ローマ字定義のカスタマイズのみで実装できます ([Mozc](https://github.com/google/mozc) と[かわせみ](https://www.monokakido.jp/ja/mac/kawasemi3/)で確認済み。MS-IME でも実装できますが、レジストリを操作する必要があります)。
+- ローマ字定義のカスタマイズのみで実装できます ([Mozc](https://github.com/google/mozc) と[かわせみ](https://www.monokakido.jp/ja/mac/kawasemi4/index.html)で確認済み。MS-IME でも実装できますが、レジストリを操作する必要があります)。
 - 英数入力に Colemak 配列を使用することを想定しています (Qwerty 配列でも使えます)。
 
 ## 入力方法
@@ -36,7 +36,32 @@
 
 <img alt="左右交互打鍵率" src="./images/hikaku_kougo.png" width="730">
 
-## 資料
+## ローマ字ルール定義ファイル
+
+ファイルの使用方法については各自で調べていただきたいと思います。不親切で申しわけございません。
+
+### MS-IME 用レジストリファイルについて
+
+誤った情報が登録されるとシステムが起動しなくなったり、アプリケーションが削除できなくなったりすることもあります。  
+使用される場合は正しい知識を持って細心の注意を払っていただくようお願いいたします。  
+
+- Windows10 21H2、Windows11 24H2 (MS-IME 15.0) で動作することを確認しています。異なる環境では正しく登録できない可能性があります。
+- 「以前のバージョンの Microsoft IME」 を使用してください。
+- 登録実行前にバックアップを取ることをおすすめします。
+- 問題が生じた場合はまず「IME を規定の設定に戻す」を実行してみてください。
+
+### ファイル一覧
+
+|                   | Mozc | かわせみ | MS-IME [※使用注意](#ms-ime-用レジストリファイルについて) |
+|-------------------|------|----------|--------|
+| **Colemak配列**   | [テーブル設定ファイル](./data/Mozc_Mizukusa_Colemak.txt) | [ルールファイル](./data/Kawasemi_Mizukusa_Colemak.nrset) | [レジストリファイル](./data/MS-IME15_Mizukusa_Colemak.reg) |
+| **QwertyUS配列**  | [テーブル設定ファイル](./data/Mozc_Mizukusa_QwertyUS.txt) | [ルールファイル](./data/Kawasemi_Mizukusa_QwertyUS.nrset) | [レジストリファイル](./data/MS-IME15_Mizukusa_QwertyUS.reg) |
+| **QwertyJIS配列** | [テーブル設定ファイル](./data/Mozc_Mizukusa_QwertyJIS.txt) | [ルールファイル](./data/Kawasemi_Mizukusa_QwertyJIS.nrset) | [レジストリファイル](./data/MS-IME15_Mizukusa_QwertyJIS.reg) |
+
+各ファイルの使用は自己責任にてお願いいたします。  
+ファイルを使用することで生じた不具合・損害等について omonomo は責任を負いません。  
+
+## [おまけ] 日本語配列製作用資料
 
 配列作りに使用した資料の CSV ファイルです。ネット上のいろいろなジャンルの文章を適当に集めて集計しました。  
 俺様配列を作りたい方のお役に少しは立てるかもしれません。
@@ -49,31 +74,6 @@
 | [連続した2音の出現数](./data/list_2on_renzoku.csv) | 「きゃあ」などの出現数をカウント |
 | [1文字挟んだ2文字の出現数](./data/list_2mozi_1tutobasi.csv) | 「あいう」と「あえう」など、1文字目と3文字目が同じものを同一としてその出現数をカウント |
 | [2文字連続を表にしたもの](./data/table_2mozi_renzoku.csv) | 縦軸が1文字目、横軸が2文字目 |
-
-## ローマ字ルール定義ファイル
-
-ファイルの使用方法については各自で調べていただきたいと思います。不親切で申しわけございません。
-
-### MS-IME 用レジストリファイルについて
-
-誤った情報が登録されるとシステムが起動しなくなったり、アプリケーションが削除できなくなったりすることもあります。  
-使用される場合は正しい知識を持って細心の注意を払っていただくようお願いいたします。  
-
-- Windows10 Pro 21H2 で動作確認を行っています。異なる環境では正しく登録できない可能性があります。
-- 登録実行前にバックアップを取ることをおすすめします。
-- 問題が生じた場合はまず「IME を規定の設定に戻す」を実行してみてください。
-- 「以前のバージョンの Microsoft IME」 を使用してください。
-
-### ファイル一覧
-
-|                   | Mozc | かわせみ | MS-IME [※使用注意](#ms-ime-用レジストリファイルについて) |
-|-------------------|------|----------|--------|
-| **Colemak配列**   | [テーブル設定ファイル](./data/Mozc_Mizukusa_Colemak.txt) | [ルールファイル](./data/Kawasemi_Mizukusa_Colemak.nrset) | [レジストリファイル](./data/MS-IME15_Mizukusa_Colemak.reg) |
-| **QwertyUS配列**  | [テーブル設定ファイル](./data/Mozc_Mizukusa_QwertyUS.txt) | [ルールファイル](./data/Kawasemi_Mizukusa_QwertyUS.nrset) | [レジストリファイル](./data/MS-IME15_Mizukusa_QwertyUS.reg) |
-| **QwertyJIS配列** | [テーブル設定ファイル](./data/Mozc_Mizukusa_QwertyJIS.txt) | [ルールファイル](./data/Kawasemi_Mizukusa_QwertyJIS.nrset) | [レジストリファイル](./data/MS-IME15_Mizukusa_QwertyJIS.reg) |
-
-各ファイルの使用は自己責任にてお願いいたします。  
-ファイルを使用することで生じた不具合・損害等について omonomo は責任を負いません。  
 
 ## [おまけ] 新ローマ字表記
 
